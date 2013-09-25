@@ -16,9 +16,9 @@
 		<div class="line"></div>
 	
 		<%= yield %>
-		
+
 		<div class="line"></div>
-		<div class="footer"> 
+		<div class="footer">
 			&copy; <%= t(:copyright) %> | Beverage Innovations | 
 			<%- if admin_signed_in? %>
 				<%= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
