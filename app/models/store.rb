@@ -1,5 +1,5 @@
 class Store < ActiveRecord::Base
-  
+
   belongs_to :tenant
   
   attr_accessible :city, :country, :gmaps, :latitude, :longitude, :name, :state, :street, :zip

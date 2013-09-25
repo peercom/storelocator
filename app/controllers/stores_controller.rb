@@ -68,7 +68,7 @@ class StoresController < ApplicationController
         format.html { redirect_to @store, notice: 'Store was successfully created.' }
         format.json { render json: @store, status: :created, location: @store }
       else
-        format.html { render action: "new" }
+        format.html { render "new" }
         format.json { render json: @store.errors, status: :unprocessable_entity }
       end
     end
@@ -84,7 +84,7 @@ class StoresController < ApplicationController
         format.html { redirect_to @store, notice: 'Store was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render "edit" }
         format.json { render json: @store.errors, status: :unprocessable_entity }
       end
     end

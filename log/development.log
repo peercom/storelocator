@@ -38003,3 +38003,556 @@ ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
   Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
   Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-25 21:54:04 +0200
+Processing by StoresController#index as HTML
+  [1m[36mTenant Load (0.4ms)[0m  [1mSELECT `tenants`.* FROM `tenants` WHERE `tenants`.`host` = 'localhost' LIMIT 1[0m
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (1.5ms)
+  Rendered stores/index.html.erb within layouts/application (163.6ms)
+Completed 200 OK in 421ms (Views: 301.6ms | ActiveRecord: 48.2ms)
+
+
+Started GET "/assets/forms_default.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/gmaps4rails.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/storefinder.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:05 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:06 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:06 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-09-25 21:54:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.9ms)
+
+
+Started GET "/assets/bg_body.gif" for 127.0.0.1 at 2013-09-25 21:54:06 +0200
+
+
+Started GET "/stores?utf8=%E2%9C%93&search%5Baddress%5D=hamburg&commit=Suche" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+Processing by StoresController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"address"=>"hamburg"}, "commit"=>"Suche"}
+  [1m[35mTenant Load (0.4ms)[0m  SELECT `tenants`.* FROM `tenants` WHERE `tenants`.`host` = 'localhost' LIMIT 1
+DEPRECATION WARNING: Returning a hash from a #scope or #default_scope block is deprecated. Please return an actual scope object instead. E.g. scope :red, -> { where(color: 'red') } rather than scope :red, -> { { conditions: { color: 'red' } } }. (The scope was defined at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:9.). (called from search at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:49)
+DEPRECATION WARNING: Returning a hash from a #scope or #default_scope block is deprecated. Please return an actual scope object instead. E.g. scope :red, -> { where(color: 'red') } rather than scope :red, -> { { conditions: { color: 'red' } } }. (The scope was defined at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:9.). (called from search at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:49)
+  [1m[36mStore Load (0.7ms)[0m  [1mSELECT stores.*,
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) AS distance
+ FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )[0m
+  Rendered stores/_infowindow.html.erb (0.6ms)
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (31.4ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT stores.*,
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) AS distance
+ FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )[0m
+  Rendered stores/index.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 714ms (Views: 55.4ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/storefinder.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.6ms)
+
+
+Started GET "/assets/marker.png" for 127.0.0.1 at 2013-09-25 21:54:14 +0200
+
+
+Started GET "/stores/13" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTenant Load (0.5ms)[0m  SELECT `tenants`.* FROM `tenants` WHERE `tenants`.`host` = 'localhost' LIMIT 1
+  [1m[36mStore Load (0.3ms)[0m  [1mSELECT `stores`.* FROM `stores` WHERE `stores`.`id` = 13 LIMIT 1[0m
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (0.8ms)
+  Rendered stores/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/storefinder.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-09-25 21:54:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.7ms)
+
+
+Started GET "/stores?utf8=%E2%9C%93&search%5Baddress%5D=hamburg&commit=Suche" for 127.0.0.1 at 2013-09-25 21:55:31 +0200
+Processing by StoresController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"address"=>"hamburg"}, "commit"=>"Suche"}
+  [1m[35mTenant Load (0.5ms)[0m  SELECT `tenants`.* FROM `tenants` WHERE `tenants`.`host` = 'localhost' LIMIT 1
+DEPRECATION WARNING: Returning a hash from a #scope or #default_scope block is deprecated. Please return an actual scope object instead. E.g. scope :red, -> { where(color: 'red') } rather than scope :red, -> { { conditions: { color: 'red' } } }. (The scope was defined at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:9.). (called from search at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:49)
+DEPRECATION WARNING: Returning a hash from a #scope or #default_scope block is deprecated. Please return an actual scope object instead. E.g. scope :red, -> { where(color: 'red') } rather than scope :red, -> { { conditions: { color: 'red' } } }. (The scope was defined at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:9.). (called from search at /Users/holger/Projekte/storefinder-rails/app/models/store.rb:49)
+  [1m[36mStore Load (1.0ms)[0m  [1mSELECT stores.*,
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) AS distance
+ FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )[0m
+  Rendered stores/_infowindow.html.erb (0.2ms)
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered stores/_infowindow.html.erb (0.2ms)
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (0.8ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT stores.*,
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) AS distance
+ FROM `stores` WHERE (
+ (ACOS(COS(0.9346427442840307)*COS(0.17442265180663344)*COS(RADIANS(stores.latitude))*COS(RADIANS(stores.longitude))+
+ COS(0.9346427442840307)*SIN(0.17442265180663344)*COS(RADIANS(stores.latitude))*SIN(RADIANS(stores.longitude))+
+ SIN(0.9346427442840307)*SIN(RADIANS(stores.latitude)))*3963) <= 62 AND tenant_id = 2
+ )[0m
+  Rendered stores/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 308ms (Views: 24.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/storefinder.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-09-25 21:55:32 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.9ms)
+
+
+Started GET "/stores/4" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTenant Load (0.3ms)[0m  SELECT `tenants`.* FROM `tenants` WHERE `tenants`.`host` = 'localhost' LIMIT 1
+  [1m[36mStore Load (0.2ms)[0m  [1mSELECT `stores`.* FROM `stores` WHERE `stores`.`id` = 4 LIMIT 1[0m
+  Rendered stores/_infowindow.html.erb (0.1ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (0.9ms)
+  Rendered stores/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/storefinder.css?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-09-25 21:55:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/holger/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/holger/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.4ms)
