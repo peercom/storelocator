@@ -1,0 +1,38 @@
+body {
+	margin: 50px 0 0 0;
+	background: url(/assets/bg_body.gif) repeat-x left top;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#container {
+	width: 962px;
+	margin: 0 auto 0 auto;
+}
+
+.line {
+	margin: 15px 0 15px 0;
+	height: 4px;
+	background: #E8E8E8;
+	overflow: hidden;
+}
+
+.footer, .footer a:link, .footer a:visited, .footer a:active {
+	text-align: center;
+	color: #666;
+}
+
+input.search-query {
+	padding-right: 14px;
+	padding-right: 4px 9;
+	padding-left: 14px;
+	padding-left: 4px 9;
+	margin-bottom: 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}

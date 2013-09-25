@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t(:storelocator) %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="container">
+		<h1>
+			<%= image_tag 'logo.png' %>
+			<%= t(:storelocator) %>
+		</h1>
+		<div class="line"></div>
+	
+		<%= yield %>
+		
+		<div class="line"></div>
+		<div class="footer"> 
+			&copy; <%= t(:copyright) %> | Beverage Innovations | 
+			<%- if admin_signed_in? %>
+				<%= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
+			<% else %>
+				<%= link_to 'Login', new_admin_session_path %>
+			<% end %>
+		</div>
+	</div>
+	
+	<%= yield :scripts %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="row-fluid">
+	<div class="span8">
+
+		<%= gmaps("map_options" => { "detect_location" => false, "center_on_user" => false, "zoom" => 5, "center_latitude" => Tenant.current.center_lat, "center_longitude" => Tenant.current.center_lng, "auto_adjust" => true } ,"markers" => { "data" => @json }) %>
+
+
+		</div>
+		<div class="span4">
+			<%= form_tag '/stores', :method => 'GET' do %>
+				<%= text_field "search", "address", "size" => 20, :class => "search-query" %>
+				<%= submit_tag t(:search) %>
+			<% end %>
+			<h3>Venga Stores</h3>
+			<%- unless @stores.empty? %>
+				<table>
+
+					<% @stores.each do |store| %>
+					<tr>
+						<td><%= link_to store.name, store %></td>
+						<td><%= store.zip %> <%= store.city %></td>
+						<%- if admin_signed_in? %>
+						<td><%= link_to t(:edit), edit_store_path(store) %></td>
+						<td><%= link_to t(:destroy), store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+						<% end %>
+					</tr>
+					<% end %>
+				</table>
+			<% else %>
+				<p><%= t(:please_enter_location) %></p>
+			<% end %>
+			<% unless Tenant.current.shop_url.blank? %>
+				<h3>Venga online</h3>
+				<p><%= t(:buy_online) %><a href="#{Tenant.current.shop_url}"><%= Tenant.current.shop_name %></a>.</p>
+				<br />
+			<% end %>
+			<%- if admin_signed_in? %>
+				<%= link_to t(:new_store), new_store_path %>
+			<% end %>
+		</div>
+	</div>

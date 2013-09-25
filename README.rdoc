@@ -1,0 +1,8 @@
+== Rails Storelocator
+
+A basic storelocator-type app. Multitenancy built in; administrative backend for multitenancy missing...
+
+TODO
+add an administrative backend for tenants
+
+Default login: info@example.com/secret

@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  storelocator: " Store Locator"
+  buy_online: "Buy xxx online at "
+  please_enter_location: "Please enter a location to find stores nearby."
+  search: "Search"
+  new_store: "New Store"
+  edit: "edit"
+  destroy: "destroy"
+  back: "Back"
+  copyright: "2013 drinkvenga.com"

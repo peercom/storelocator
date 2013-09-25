@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<div class="row-fluid">
+
+<div class="span8">
+	<%= gmaps("map_options" => { "detect_location" => false, "center_on_user" => false, "zoom" => 15, "center_latitude" => 51.53694, "center_longitude" => 9.926834, "auto_adjust" => true, "auto_zoom" => false } ,"markers" => { "data" => @json }) %>
+</div>
+<div class="span4">
+	<h2><%= @store.name %></h2>
+	<address class="vcard"> 
+		<div class="adr"> 
+			<div class="street-address"> <%= @store.street %></div> 
+			<span class="postal-code"><%= @store.zip %></span> 
+			<span class="locality"><%= @store.city %></span>  
+			<div class="country-name"><%= @store.country %></div> 
+		</div> 
+	</address>
+	
+	<%- if admin_signed_in? %>
+		<%= link_to 'Bearbeiten', edit_store_path(@store) %> |
+	<% end %>
+	<%= link_to t(:back), :back %>
+</div>
+
+</div>
