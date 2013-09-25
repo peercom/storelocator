@@ -10,7 +10,7 @@
 				<%= text_field "search", "address", "size" => 20, :class => "search-query" %>
 				<%= submit_tag t(:search) %>
 			<% end %>
-			<h3>Venga Stores</h3>
+			<h3>Stores</h3>
 			<%- unless @stores.empty? %>
 				<table>
 
@@ -29,7 +29,7 @@
 				<p><%= t(:please_enter_location) %></p>
 			<% end %>
 			<% unless Tenant.current.shop_url.blank? %>
-				<h3>Venga online</h3>
+				<h3>Buy online</h3>
 				<p><%= t(:buy_online) %><a href="#{Tenant.current.shop_url}"><%= Tenant.current.shop_name %></a>.</p>
 				<br />
 			<% end %>
